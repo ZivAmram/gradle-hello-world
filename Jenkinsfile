@@ -1,4 +1,4 @@
-node a{
+node {
   
   stage 'Checkout'
     git url: 'https://github.com/ZivAmram/gradle-hello-world.git'
@@ -8,5 +8,5 @@ node a{
    // Mark the code build 'stage'....
   stage 'Build'
    // Run the maven build
-  sh "${gradleHome}/bin/mvn clean install"
+  sh "${gradleHome}/bin/gradle clean install"
 }
